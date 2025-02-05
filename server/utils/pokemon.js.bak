@@ -1,7 +1,6 @@
 import { ProxyAgent } from "proxy-agent";
 import { ofetch } from "ofetch";
 
-//0205差し替え
 //const agent = new ProxyAgent();
 const createProxyAgent = async () => {
   if (!(process.env.HTTPS_PROXY || process.env.HTTP_PROXY)) return;
